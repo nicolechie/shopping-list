@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+	text-family: sans-serif;
+}
+.masthead {
+	background-color: #673AB7;
+	width: 100%;
+	position: fixed;
+	z-index: 9999;
+}
+.masthead-content {
+	width: 80%;
+	height: 10rem;
+	margin: auto;
+	color: #fff;
+	text-transform: uppercase;
+	border: 1px solid black;
+}
+.list {
+	width: 50%;
+	left: 25%;
+	top: 12rem;
+	position: absolute;
+}
+li {
+	list-style-type: none;
+}
+.center {
+	padding-top: 5rem;
+    text-align: center;
+}
+.textbox { 
+    border: 1px dotted #000000; 
+    outline:0; 
+    height:25px; 
+    width: 275px; 
+} 
+button.delete {
+  border-radius: 50%;
+  background-color: #673AB7;
+  color: #fff;
+  font-size: .5em;
+  height: 20px;
+  width: 20px;
+  font-weight: bold;
+  margin: auto 5px;
+}
+.check {
+  opacity: .5;
+}
+.checkbox {
+  margin-right: .25rem
+}
+
+
