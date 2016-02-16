@@ -3,50 +3,65 @@
   margin: 0;
 }
 body {
-	text-family: sans-serif;
+	font-family: sans-serif;
+}
+h1 {
+	margin:-.67rem 0;
+}
+.wrapper {
+  max-width: 500px;
 }
 .masthead {
-	background-color: #673AB7;
+  background-color: #7E57C2;
+  height: 10rem;
 	width: 100%;
 	position: fixed;
-	z-index: 9999;
+  z-index: 9999;
 }
 .masthead-content {
-	width: 80%;
+  background-color: #673AB7;
+	width: 100%;
 	height: 10rem;
 	margin: auto;
 	color: #fff;
 	text-transform: uppercase;
-	border: 1px solid black;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+  padding-top: 5.5rem;
+  text-align: center;
+}
+.dropDown {
+  text-align: center;
+  margin-top: 1rem;
+  display: none;
 }
 .list {
-	width: 50%;
-	left: 25%;
-	top: 12rem;
+	top: 10.5rem;
+  margin-top: 1rem;
 	position: absolute;
-}
-li {
-	list-style-type: none;
+  font-size: 1.25em;
+  text-transform: capitalize;
 }
 .center {
-	padding-top: 5rem;
-    text-align: center;
+  max-width: 500px;
+  margin: 0px auto;
 }
-.textbox { 
-    border: 1px dotted #000000; 
+ .textbox { 
+    border: 1px solid #000000; 
     outline:0; 
-    height:25px; 
-    width: 275px; 
-} 
+    height:35px; 
+    width: 300px; 
+    padding: 5px;
+    font-size: inherit;
+  } 
 button.delete {
   border-radius: 50%;
   background-color: #673AB7;
   color: #fff;
-  font-size: .5em;
   height: 20px;
   width: 20px;
-  font-weight: bold;
   margin: auto 5px;
+  font-size: .25em;
+  padding: 1px;
 }
 .check {
   opacity: .5;
@@ -54,5 +69,38 @@ button.delete {
 .checkbox {
   margin-right: .25rem
 }
-
-
+button.showDropDown {
+  border-radius: 50%;
+  background-color: #26C6DA;
+  color: #fff;
+  font-size: 2em;
+  height: 60px;
+  width: 60px;
+  margin: -1.25em 5px;
+  float: right;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}
+button.hideDropDown {
+  border-radius: 50%;
+  background-color: #26C6DA;
+  color: #fff;
+  font-size: 2em;
+  height: 60px;
+  width: 60px;
+  margin: -1.25em 5px;
+  float: right;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+button:hover {
+  cursor: pointer;
+}
+button.addItem {
+  border-radius: 8px;
+  background-color: #26C6DA;
+  height: 35px;
+  color: #fff;
+  font-size: 1em;
+  margin: auto 5px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+}

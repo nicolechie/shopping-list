@@ -2,42 +2,47 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<title>Shopping List</title>
 </head>
 <body>
 	<header class = "masthead">
-		<div class = "masthead-content center">
+		<div class = "masthead-content">
+      <div class = "center">
 			<h1>Shopping List</h1>
+        <button class = "showDropDown"><i class="fa fa-plus"></i></button>
+        <button class = "hideDropDown"><i class="fa fa-minus"></i></button>
 		</div>
+    </div>
+    <div class = 'dropDown'> 
+      <div class = "center"><input class="textbox" type="text" placeholder= 'List Item'>
+      <button class = "addItem">ADD</button>
+      </div>
+      </div>
+    </div>
 	</header>
-	<section>
+	<section class = "center">
 		<div class = "list">
-			<input class="textbox"type="text">
 		<ul>
-			<li>
-				<span class="checkbox">
-					<input type="checkbox">
-        		</span>Eggs<button class = "delete">x</button>
-        	</li>
 			<li><span class="checkbox">
-      				<input type="checkbox">
-        		</span>Milk<button class = "delete">x</button></li>
+      <input type="checkbox">
+        </span>Eggs<button class = "delete" ><i class="fa fa-times"></i></button></li>
 			<li><span class="checkbox">
-      				<input type="checkbox">
-        		</span>Apples<button class = "delete">x</button>
-        	</li>
+      <input type="checkbox">
+        </span>Milk<button class = "delete" ><i class="fa fa-times"></i></button></li>
 			<li><span class="checkbox">
-      				<input type="checkbox">
-        		</span>Onions<button class = "delete">x</button>
-        	</li>
+      <input type="checkbox">
+        </span>Apples<button class = "delete" ><i class="fa fa-times"></i></button></li>
 			<li><span class="checkbox">
-      				<input type="checkbox">
-        		</span>Cheese<button class = "delete">x</button>
-        	</li>
+      <input type="checkbox">
+        </span>Onions<button class = "delete" ><i class="fa fa-times"></i></button></li>
+			<li><span class="checkbox">
+      <input type="checkbox">
+        </span>Cheese<button class = "delete" ><i class="fa fa-times"></i></button></li>
 		</ul>
-	</div>
+		</div>
 	</section>
 	<footer>
 	</footer>
